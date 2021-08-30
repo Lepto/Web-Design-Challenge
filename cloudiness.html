@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Data Dashboard</title>
+  </head>
+  <body>
+    <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href = "index.html">Weather Data Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html" target = "_self">Comparisons</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Plots
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="max_temp.html">Temperature</a></li>
+                <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                <li><a class="dropdown-item" href="wind.html">Wind Speed</a></li>
+                <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <br><br>
+   <div class = "container">
+    <div class = "row">
+      <div class = "col-xs-3 col-md-6 col-md-12">
+        <h2>Cloudiness Plot</h2>
+        <br><br>
+      </div>
+    </div>
+   </div> 
+   <div class = "container">
+    <div class = "row">
+        <div class = "col-xs-3 col-sm-6">
+            <h3>Latitude v. Cloudiness (%)</h3>
+            <a href="#"><img src = "Resources/assets/images/Fig3.png" class = "comp2" alt = "Latitude v. Cloudiness"></a>
+        </div>
+        <div class = "col-xs-3 col-sm-3">
+            <!-- <h3>Latitude v. Cloudiness (%)</h3>
+            <a href="humidity.html"><img src = "Resources/assets/images/Fig3.png" class = "comp2 grey" alt = "Latitude v. Cloudiness"></a> -->
+
+            <h3>Latitude v. Max Temperature</h3>
+            <a href="max_temp.html"><img src = "Resources/assets/images/Fig1.png" class = "comp2" alt = "Latitude v. Max Temperature"></a>
+        
+        </div>
+        <div class = "col-xs-3 col-sm-3">    
+            <h3>Latitude v. Humidity</h3>
+            <a href="humidity.html"><img src = "Resources/assets/images/Fig2.png" class = "comp2" alt = "Latitude v. Humidity"></a>
+        
+            <h3>Latitude v. Wind Speed</h3>
+            <a href="wind.html"><img src = "Resources/assets/images/Fig4.png" class = "comp2" alt = "Latitude v. Wind Speed"></a>
+        </div>
+
+        </div>
+    </div>
+   
+   </div>
+   
+   <div class = "container">
+       <div class = "row">
+           <div class = "col-xs-3 col-md-12">
+            <p><strong>Analysis: Cloudiness</strong></p>
+            <p>The measurement of percent cloud cover or cloudiness, is used to measure the opacity of cloud coverage from the sky.
+                The amount of cloud cover can affect the amount of sunlight energy is being directed to an area, which in turn can
+                determine the temperature for the area.  The percentage of cloud cover can also help calculate the probability of
+                rain fall in an area.</p>
+            <p>The plot in this dashboard shows that cloudiness varies around the world, where percent cloudiness can be between
+                zero to 100 percent.  However, the data shows that the majority of world experiences zero percent cloudiness to about
+                80% cloudiness.
+            </p>
+           </div>
+       </div>
+   </div>    
+
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  </body>
+</html>
