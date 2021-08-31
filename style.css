@@ -57,7 +57,6 @@ p {
   padding: 10px;
   margin-left: 5%;
 }
-
 .navbar-collapse {
   position: absolute;
   right: 5%;
@@ -116,3 +115,32 @@ table {
   font-size: small;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  outline: black;
+  border-color: black;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  color: black;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  color: black;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    padding: 10px;
+ }
+}
