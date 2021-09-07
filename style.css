@@ -84,7 +84,7 @@ p {
   margin: 20px auto;
   padding:1em;
 }
-  
+
 .buttons {
   margin-bottom: .5em;
 }
@@ -117,24 +117,9 @@ table {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  outline: black;
-  border-color: black;
+  filter: invert(100);
 }
 
-.carousel-control-next-icon:after
-{
-  content: '>';
-  color: black;
-  font-weight: 800;
-  font-size: 2rem;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  color: black;
-  font-weight: 800;
-  font-size: 2rem;
-}
 
 @media only screen and (max-width: 991px) {
   .navbar-collapse {
@@ -142,5 +127,4 @@ table {
     right: 5%;
     top: 0;
     padding: 20px;
- }
 }
